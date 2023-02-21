@@ -1,0 +1,4 @@
+[build]
+  base = "Final_project"
+  command = "cd final_project && npm run start"
+  publish = "final_project/build"
