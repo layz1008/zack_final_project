@@ -2,5 +2,5 @@
 # Build command for React app
 command = "npm run build"
 # Directory with compiled assets
-publish = "build"
+publish = "dist"
 
