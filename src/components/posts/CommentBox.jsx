@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./CommentBox.css";
-import { createComment } from "../../services/comments";
+import { createComment } from "../../services/comments.js";
 import {deletePost} from "../../services/posts.js"
 import { useParams, useNavigate } from "react-router-dom";
 

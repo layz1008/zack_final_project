@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState, useContext } from "react";
 import "./PostModal.css";
-import { updatePost } from "../../services/posts";
-import CommentBox from "./CommentBox";
+import { updatePost } from "../../services/posts.js";
+import CommentBox from "./CommentBox.jsx";
 
-import { createComment, getComments } from "../../services/comments";
-import { UserContext } from "../../contexts/userContext";
+import { createComment, getComments } from "../../services/comments.js";
+import { UserContext } from "../../contexts/userContext.js";
 
 
 function PostModal({ modalPost, displayModal, setDisplayModal, comments, setComments, banana, refresh, setRefresh }) {

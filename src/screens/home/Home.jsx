@@ -1,12 +1,12 @@
 import { useState, useEffect, useContext } from "react";
 import "./home.css";
 import Post from "../../components/posts/Post.jsx";
-import UserAssets from "../../components/user_assets/UserAssets.jsx";
-import PostModal from "../../components/posts/PostModal";
+//import UserAssets from "../../components/user_assets/UserAssets.jsx";
+import PostModal from "../../components/posts/PostModal.jsx";
 import { getPosts } from "../../services/posts.js";
 import { getComments } from "../../services/comments.js";
 import { getNews } from "../../services/newsAPI.js";
-import { UserContext } from "../../contexts/userContext";
+import { UserContext } from "../../contexts/userContext.js";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -15,7 +15,7 @@ export default function Home() {
   const [modalPost, setModalPost] = useState({});
   const [displayModal, setDisplayModal] = useState(false);
   const [sortPost, setSortPost] = useState("");
-  const {user, setUser, isUserLoggedIn} = useContext(UserContext)
+  //const {user, setUser, isUserLoggedIn} = useContext(UserContext)
   const [refresh,setRefresh] = useState(false)
 
   useEffect(() => {

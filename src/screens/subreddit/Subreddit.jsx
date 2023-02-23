@@ -1,12 +1,15 @@
-import {React, useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./subreddit.css";
-import Post from "../../components/posts/Post";
-import PostModal from "../../components/posts/PostModal";
+import Post from "../../components/posts/Post.jsx"
+//import Post from "../../components/posts/Post";
+import PostModal from "../../components/posts/PostModal.jsx";
+//import PostModal from "../../components/posts/PostModal";
 import { Link, useParams, useLocation, Route } from "react-router-dom";
-import { getPosts, getPost } from "../../services/posts";
-import { getComments } from "../../services/comments";
-import { getSubs, getSub } from "../../services/subs";
-import CreatePost from "../createPost/CreatePost";
+import { getPosts, getPost } from "../../services/posts.js";
+import { getComments } from "../../services/comments.js";
+import { getSubs, getSub } from "../../services/subs.js";
+import CreatePost from "../createPost/CreatePost.jsx";
+//import CreatePost from "../createPost/CreatePost";
 
 export default function Subreddit({}) {
   const [posts, setPosts] = useState([]);

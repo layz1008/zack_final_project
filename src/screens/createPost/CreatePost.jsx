@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "./createpost.css";
-import { createPost } from "../../services/posts";
-import Subreddit from "../subreddit/Subreddit"
+import { createPost } from "../../services/posts.js";
+//import Subreddit from "../subreddit/Subreddit"
 
 const CreatePost = ({subID}) => {
   const [title, setTitle] = useState("");
